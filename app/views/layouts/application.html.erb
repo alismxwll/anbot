@@ -11,6 +11,8 @@
   <div class="center">
     <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 
+    <button><%= cmd = %x[ruby ghost_launch.rb] %></button>
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
